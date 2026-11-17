@@ -57,16 +57,3 @@ F. INTEGRATED BUSINESS QUESTIONS
 38. Find each product's gross margin percentage and flag products below 20%.
 39. Find the total procurement spend by supplier and sort from highest to lowest.
 40. Identify products whose current stock is an exact multiple of 5 and whose list price is between ₹500 and ₹5,000.
-
-STUDENT SUBMISSION EXPECTATION
-For every question, submit:
-1. SQL query
-2. A one-sentence explanation of the logic
-3. A screenshot or copied result set
-4. One business observation from the output
-
-INSTRUCTOR NOTE
-The compound operator questions are conceptual translation exercises. MySQL uses assignments such as:
-UPDATE products SET stock_qty = stock_qty + 10;
-UPDATE employee_access SET permission_mask = permission_mask | 8;
-Use START TRANSACTION; ... ROLLBACK; for safe practice.
