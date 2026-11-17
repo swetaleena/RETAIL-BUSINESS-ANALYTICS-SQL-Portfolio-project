@@ -1,0 +1,7 @@
+employee_id,employee_name,department_id,job_title,permission_mask
+401,Nina,1,Sales Analyst,3
+402,Omar,2,Sales Lead,11
+403,Pia,3,Inventory Analyst,5
+404,Ravi,4,Procurement Lead,13
+405,Sana,5,Read Only,1
+406,Tenzin,6,Operations Manager,15

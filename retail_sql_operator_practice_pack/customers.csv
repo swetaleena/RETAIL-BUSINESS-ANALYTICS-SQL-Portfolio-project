@@ -1,0 +1,11 @@
+customer_id,customer_name,city,state,signup_date,customer_type
+201,Aarav Mehta,Pune,Maharashtra,2024-01-15,Retail
+202,Diya Nair,Kochi,Kerala,2024-02-20,Retail
+203,Kabir Das,Bhubaneswar,Odisha,2024-03-11,Business
+204,Meera Shah,Ahmedabad,Gujarat,2024-04-05,Retail
+205,Rohan Iyer,Chennai,Tamil Nadu,2024-05-19,Business
+206,Ananya Rao,Bengaluru,Karnataka,2024-06-22,Retail
+207,Ishaan Gupta,Delhi,Delhi,2024-07-10,Business
+208,Sara Khan,Hyderabad,Telangana,2024-08-14,Retail
+209,Vivaan Patnaik,Cuttack,Odisha,2024-09-01,Retail
+210,Tara Bose,Kolkata,West Bengal,2024-10-09,Business

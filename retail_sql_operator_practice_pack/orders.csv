@@ -1,0 +1,17 @@
+order_id,customer_id,order_date,order_status,payment_method,ship_city,priority_flag
+5001,201,2025-01-05,Delivered,Card,Pune,0
+5002,202,2025-01-08,Delivered,UPI,Kochi,0
+5003,203,2025-01-12,Shipped,Bank Transfer,Bhubaneswar,0
+5004,204,2025-01-15,Cancelled,UPI,Ahmedabad,0
+5005,205,2025-02-02,Delivered,Card,Chennai,0
+5006,206,2025-02-07,Delivered,UPI,Bengaluru,0
+5007,207,2025-02-11,Processing,Card,Delhi,0
+5008,208,2025-02-19,Delivered,Wallet,Hyderabad,0
+5009,209,2025-03-03,Delivered,UPI,Cuttack,0
+5010,210,2025-03-10,Returned,Card,Kolkata,0
+5011,201,2025-03-18,Delivered,UPI,Pune,0
+5012,203,2025-04-01,Delivered,Bank Transfer,Bhubaneswar,0
+5013,205,2025-04-12,Cancelled,Card,Chennai,0
+5014,206,2025-04-20,Delivered,UPI,Bengaluru,0
+5015,208,2025-05-04,Shipped,Wallet,Hyderabad,0
+5016,209,2025-05-15,Delivered,UPI,Cuttack,0

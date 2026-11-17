@@ -1,0 +1,72 @@
+SQL OPERATOR QUESTION BANK
+Business context: A retailer sells electronics, furniture, lifestyle and stationery products.
+Use the supplied CSV tables. Write SQL queries; do not use the examples as answers.
+
+A. ARITHMETIC OPERATORS
+1. (+) The finance team wants to estimate the revised list price after adding a flat ₹250 handling charge. Display product name, list price and revised price.
+2. (-) Calculate the gross profit per unit for every product using list_price minus cost_price.
+3. (*) Calculate the gross sales value for each order line using quantity multiplied by unit_price.
+4. (/) Calculate the average selling price per unit for each order line using line value divided by quantity. Avoid division by zero.
+5. (%) The warehouse wants to identify products whose stock quantity leaves a remainder of 0 when divided into packs of 10. Show product and stock quantity.
+
+B. COMPARISON OPERATORS
+6. (=) Find all products in the Electronics category.
+7. (>) Find products whose list price is greater than ₹10,000.
+8. (<) Find products whose stock quantity is below 20.
+9. (>=) Find purchase orders whose quantity is at least 50.
+10. (<=) Find products whose cost price is ₹1,000 or less.
+11. (<>) Find orders whose status is not Delivered.
+
+C. COMPOUND ASSIGNMENT OPERATORS – DIALECT AWARENESS
+These are shown on the W3Schools page but are not valid MySQL compound assignment syntax.
+12. (+=) A stock controller wants to add 10 units to every active product. Write the MySQL-compatible UPDATE.
+13. (-=) Reduce stock by 3 units for products in the Lifestyle category. Write the MySQL-compatible UPDATE.
+14. (*=) Increase list prices by 5% for Furniture products. Write the MySQL-compatible UPDATE.
+15. (/=) Divide a temporary numeric allowance column by 2. Explain why a suitable numeric column is needed; do not update list_price for this exercise.
+16. (%=) Set a temporary batch number to its remainder when divided by 5. Write the MySQL-compatible assignment expression.
+17. (&=) Keep only permission bits 1 and 4 in permission_mask. Write the MySQL-compatible UPDATE expression.
+18. (^=) Toggle permission bits represented by mask 2. Write the MySQL-compatible UPDATE expression.
+19. (|=) Add the approval permission bit (8) to permission_mask without removing existing permissions. Write the MySQL-compatible UPDATE expression.
+For questions 12–19, use a transaction and ROLLBACK after testing. Do not execute against production data.
+
+D. BITWISE OPERATORS
+Permission bit meanings: 1=View, 2=Create, 4=Edit, 8=Approve.
+20. (&) Find employees who have the Edit permission (bit 4).
+21. (|) For each employee, show the permission mask after adding the Approve bit (8), without changing the stored data.
+22. (^) Show the result of toggling the Create permission bit (2) for each employee.
+23. (~) Display the bitwise NOT of each employee's permission mask. Explain why the result may be negative in MySQL's signed integer representation.
+Optional extension: use shifts (<< and >>) to demonstrate how permission bits are positioned.
+
+E. LOGICAL OPERATORS
+24. (ALL) Find products priced lower than every product in category_id 2.
+25. (AND) Find active Electronics products with stock below 50.
+26. (ANY) Find products priced higher than at least one product supplied by supplier 302. Use a subquery.
+27. (BETWEEN) Find orders placed between 1 February 2025 and 31 March 2025, inclusive.
+28. (EXISTS) Find suppliers who have at least one purchase order.
+29. (IN) Find products that appear in purchase orders from supplier 301 or supplier 302.
+30. (LIKE) Find customers whose names begin with 'S'.
+31. (NOT) Find products that are not in the Furniture category.
+32. (OR) Find orders paid by UPI or Wallet.
+33. (SOME) Find products priced higher than SOME prices of products in category_id 3. Compare the result with ANY.
+
+F. INTEGRATED BUSINESS QUESTIONS
+34. Calculate order-line revenue after discount and show only lines with net value above ₹5,000.
+35. Find customers who have placed at least one Delivered order and live in Odisha or Maharashtra.
+36. Identify suppliers with at least one purchase order that has not yet been received.
+37. Find products that are active, have stock below 20, and cost more than ₹1,000.
+38. Find each product's gross margin percentage and flag products below 20%.
+39. Find the total procurement spend by supplier and sort from highest to lowest.
+40. Identify products whose current stock is an exact multiple of 5 and whose list price is between ₹500 and ₹5,000.
+
+STUDENT SUBMISSION EXPECTATION
+For every question, submit:
+1. SQL query
+2. A one-sentence explanation of the logic
+3. A screenshot or copied result set
+4. One business observation from the output
+
+INSTRUCTOR NOTE
+The compound operator questions are conceptual translation exercises. MySQL uses assignments such as:
+UPDATE products SET stock_qty = stock_qty + 10;
+UPDATE employee_access SET permission_mask = permission_mask | 8;
+Use START TRANSACTION; ... ROLLBACK; for safe practice.

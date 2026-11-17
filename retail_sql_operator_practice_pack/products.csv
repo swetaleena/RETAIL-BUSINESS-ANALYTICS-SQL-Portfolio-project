@@ -1,0 +1,13 @@
+product_id,product_name,category,category_id,list_price,cost_price,stock_qty,is_active
+101,Laptop Pro,Electronics,1,78000,62000,15,1
+102,Wireless Mouse,Electronics,1,1200,500,120,1
+103,Mechanical Keyboard,Electronics,1,4500,2100,45,1
+104,Office Chair,Furniture,2,8500,5200,28,1
+105,Standing Desk,Furniture,2,22000,15000,8,1
+106,Water Bottle,Lifestyle,3,650,180,200,1
+107,Notebook Pack,Stationery,4,250,90,350,1
+108,USB-C Hub,Electronics,1,3200,1600,0,1
+109,Monitor 27 inch,Electronics,1,18500,12500,12,1
+110,Desk Lamp,Furniture,2,1800,700,60,1
+111,Travel Mug,Lifestyle,3,950,300,75,1
+112,Old Model Router,Electronics,1,2400,1700,4,0
